@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Kodchasan', sans-serif;
+}
+
+div div .carousel.slide .carousel-inner .carousel-caption {
+    bottom: 18.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #341333;
+    text-align: left;
+    width: 34%;
+}
+
+div div .carousel.slide .carousel-inner .carousel-caption h2{
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: bold;
+    font-size: 58px;
+}
+
+div div .carousel.slide .carousel-inner .carousel-caption p{
+    font-size: 20px;
+    margin-top: 20px;    
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+div div .carousel.slide .carousel-inner .carousel-caption p span{
+    font-weight: bold;
+}
+
+div div .carousel.slide .carousel-inner .carousel-caption a{
+    text-decoration: none;
+    color: #310030;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    width: 112px;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Kodchasan', sans-serif;
+    border-radius: 8px;
+}
+
+div div .carousel.slide .carousel-inner .carousel-caption a:hover{
+    background-color: #310030;
+    color: white;
+    border: #000000;
+}
+
+section div .img2{
+    margin-left: -166px;
+}
+
+section div .img3{
+    margin-right: -166px;
+    z-index: 1;
+}
+
+section div.info2{
+    display: flex;
+    align-items: center;
+}
+
+section div.info3{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.info{
+    margin-top: 15%;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+section div.info2 div,
+section div.info3 div{
+    padding: 50px;
+}
+
+section div.info2 div p,
+section div.info3 div p{
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+
+section div.info2 div h2,
+section div.info3 div h2{
+    font-family: 'Kodchasan', sans-serif;
+}
+
+section div.info2 div a,
+section div.info3 div a{
+    text-decoration: none;
+    color: #b988b8;
+    border: 1px solid;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    width: 112px;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Kodchasan', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+}
+
+section div.info2 div a:hover,
+section div.info3 div a:hover{
+    background-color: #b988b8;
+    color: #000;
+}
+
+.productsHome,
+.clientes{
+    margin-top: 15%;
+}
+
+.productsHome h2,
+.clientes h2,
+.contact h2{
+    text-align: center;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+.productsHome .card-group .card{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+}
+
+.productsHome .card-group .card .card-body .card-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+
+
+.clientes .opiniones div .stars{
+    background-image: url(../img/icons/star-solid.svg);
+    width: 182px;
+    height: 32px;
+    background-repeat-y: no-repeat;
+    background-size: contain;
+    margin-bottom: 20px;
+}
+
+.clientes .opiniones{
+    display: flex;
+    padding: 70px;
+}
+
+.clientes .opiniones div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 576px;
+    flex-wrap: wrap;
+}
+
+.clientes .opiniones div p{
+    padding-right: 61px;
+    padding-left: 61px;
+}
+
+.contact p{
+    text-align: center;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 30%;
+}
+
+.contact form label{
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form textarea:focus{
+    border: 1px #954d93;
+}
+
+.contact form button{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #954d93;
+    border: 1px solid;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    width: 112px;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Kodchasan', sans-serif;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.contact{
+    margin-top: 15%;
+}
+
+/* CSS DE FOOTER Y NAV  */
+
+footer{
+    padding: 240px;
+}
+
+footer .logo{
+    background-image: url(../img/icons/depily_logo.svg);
+    height: 140px;
+    background-repeat: no-repeat;
+}
+
+footer .redes i{
+    margin: 20px;
+    font-size: 22px;
+    color: #7b7a7a;
+}
+
+footer .map{
+    display: flex;
+    margin-top: 40px;
+}
+
+footer .map div:last-child{
+    margin-left: 120px;
+}
+
+footer .map div h2{
+    font-family: 'Kodchasan', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+footer .map div ul{
+    list-style: none;
+}
+
+footer .map div ul li{
+    margin-bottom: 30px;
+
+}
+
+footer p{
+    color: #7b7a7a;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+nav .container div .navbar-nav{
+    display: flex;
+    align-items: center;
+    margin-left: 16%;
+    width: auto;
+    justify-content: center;
+}
+
+nav .container div .navbar-nav .navbar-brand{
+    background-image: url(../img/icons/logo-destok.svg);
+    height: 62px;
+    width: 124px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav .container div .navbar-nav a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 80px;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 18px;
+}
+
+/**Sección Nosotros**/
+
+.seccion-portada-nosotros{
+    background-image: url(../../public/img/nosotros/depily-nosotros.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-nosotros h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.portada-nosotros p {
+    margin-bottom: 15px;
+}
+
+.portada-nosotros span {
+    font-style: italic;
+    letter-spacing: 0.1em;
+    margin-top: 15px;
+}
+
+.portada-nosotros .fase-portada-nosotros {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.descripcion-nosotros{
+    margin: 100px 0 100px 0;
+
+}
+
+.nosotros .valores-empresa{
+    margin-top: 100px;
+}
+
+.texto-nosotros > h2 > span {
+    font-family: 'Kodchasan', sans-serif;
+}
+
+.nosotros .descripcion-nosotros div div div .texto-nosotros{
+    height: 100%;
+}
+
+
+/* ------------SEC PRODUCTOS------------------- */
+.seccion-portada-productos{
+    background-image: url(../../public/img/portada-productos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-productos h1 {
+    font-size: 68px;
+    margin-bottom: 20px;
+    margin-top: 126px;
+    color: #fff;
+    width: 20px;
+    margin-left: 530px;
+}
+
+.btn-productos {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #996998;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid #996998;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 42px;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    width: 128px;
+}
+
+.btn-productos ion-icon{
+    margin-left: 12px;
+}
+
+.btn-productos:hover {
+    background-color: #996998;
+    color: #ffffff;
+}
+
+.productos > div{
+    width: 100%;
+}
+
+.productos > div .col{
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.productos > div .card{
+    border: none;
+    box-shadow: 0 0 10px rgb(0 0 0 / 11%);
+    border-radius: 8px;
+}
+
+.productos > div div div div .card-title{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.productos > div div div .card-body{
+    margin-top: 32px;
+    color: #996998;
+}
+
+/* .productos > div div div div a {
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    color: #4f324f;
+    margin-top: 30px;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+.productos > div div div div a ion-icon{
+    margin-left: 13px;
+} */
+
+
+.detalle-producto-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .producto-info {
+    margin-bottom: 20px;
+  }
+  
+  .carrusel-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .imagen-carrusel {
+    order: -1;
+  }
+
+.detalleProduct{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 4%;
+}
+
+.detalleProduct .imagenes{
+    width: 50%;
+}
+
+.detalleProduct .infoProduct{
+    margin-top: 62px;
+    margin-left: 10%;
+}
+
+.detalleProduct .infoProduct h1{
+    color: #996998;
+}
+
+.detalleProduct .infoProduct p{
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 130px;
+}
+
+.imagenes .slick-slider .slick-prev:before, 
+.imagenes .slick-slider .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #bfbfbf;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.infoProduct button{
+    text-decoration: none;
+    color: #954d93;
+    border: 1px solid;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    width: 264px;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Kodchasan', sans-serif;
+    margin-top: 130px;
+    border-radius: 8px;
+}
+
+.infoProduct a{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    color: #996998;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+.infoProduct a ion-icon{
+    margin-right: 10px;
+}
+
+
+/**BLOG**/
+
+.btn-blog {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #996998;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid #996998;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-blog:hover {
+    background-color: #ffffff;
+    color: #996998;
+}
+.autor{
+    font-family: 'Kodchasan', sans-serif;
+    color: #b11cab;
+}
+
+.titulo-blog-detalle{
+    font-family: 'Kodchasan', sans-serif;
+    color: #996998;
+    font-weight: bold;
+}
+
+.titulo-blog{
+    font-family: 'Kodchasan', sans-serif;
+    color: #996998;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.seccion-portada-blog{
+    background-image: url(../../public/img/blog/portada-blog.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #341333;
+}
+
+.seccion-portada-blog h1{
+    font-size: 90px;
+}
+
+.subtitulo-blog-detalle{
+    font-family: 'Kodchasan', sans-serif;
+    color: #996998;
+    font-size: 25px;
+}
+
+.subtitulo-blog{
+    font-family: 'Kodchasan', sans-serif;
+    color: #996998;
+    font-size: 25px;
+}
+
+.custom-card-minimal{
+    box-shadow: 0 0 10px rgb(0 0 0 / 11%);
+    border-radius: 8px;
+}
+
+.ultima-novedad{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}    
+
+.custom-card-minimal .no-gutters .col-md-6{
+    padding: 30px;
+}
+
+
+.custom-card-minimal .card-text{
+    margin-top: 8px;
+}
+
+.custom-card-minimal .texto-blog  small{
+    margin: 30px;
+}
+
+.row .blogs {
+    margin-bottom: 8%;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+}
+
+h3,
+h4{
+    font-family: 'Kodchasan', sans-serif;
+}
