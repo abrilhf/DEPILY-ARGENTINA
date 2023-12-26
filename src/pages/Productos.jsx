@@ -4,12 +4,24 @@ import Card from 'react-bootstrap/Card';
 import { Col, Row } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Productos() {
 
     useEffect(() => {
         // Desplazar la página hacia arriba al montar el componente
         window.scrollTo(0, 0);
+
+        AOS.init({
+            duration: 1000,
+            offset: 50, 
+            easing: 'ease-in-out', 
+        });
+
+        return () => {
+            AOS.refresh();
+        };
     }, []);
     
     const [hoveredProduct, setHoveredProduct] = useState(null);
@@ -28,7 +40,7 @@ function Productos() {
             </div>
             <Row xs={1} md={2}> 
             {productos.productos.map((producto, index) => (
-            <Col key={index}>
+            <Col key={index} data-aos="fade-up">
             <Card>
                 <Link to={`/productos/${producto.id}`}>
                 <Card.Img variant="top"                     

@@ -2,13 +2,23 @@ import { Helmet } from "react-helmet"
 import CardsProduct from "../components/CardsProduct"
 import CarouselHome from "../components/CarouselHome"
 import { useEffect } from "react";
-// import Fade from 'react-reveal/Fade';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function HomePage(){
     useEffect(() => {
-        // Desplazar la página hacia arriba al montar el componente
         window.scrollTo(0, 0);
-      }, []);
+
+        AOS.init({
+            duration: 1000,
+            offset: 50, 
+            easing: 'ease-in-out', 
+        });
+
+        return () => {
+            AOS.refresh();
+        };
+    }, []);
     
     return (
         <div>
@@ -18,9 +28,9 @@ function HomePage(){
             <CarouselHome></CarouselHome>
 
             <section className="info">
-                <div className="info2">
-                    <img src="../img/home/cera.jpg" className="img1" alt=""/>
-                    <img src="../img/home/mujer-depi.jpg" className="img2" alt=""/>
+                <div className="info2" data-aos="fade-up">
+                    <img src="../img/home/cera.jpg" className="img1 img-fluid " alt=""/>
+                    <img src="../img/home/mujer-depi.jpg" className="img2 img-fluid " alt=""/>
                     <div>
                         <h2>Piel Suave, Sin Esfuerzo</h2>
                         <p>Descubre la magia de la depilación en casa con nuestras avanzadas máquinas. Experimenta la suavidad duradera y la comodidad de una piel sin vello desde la comodidad de tu hogar. Transforma tu rutina de belleza con tecnología de precisión y resultados impecables. ¡Tu piel merece lo mejor!</p>
@@ -28,9 +38,9 @@ function HomePage(){
                     </div>
                 </div>
 
-                <div className="info3">
-                    <img src="../img/home/cera-profesional.jpg" className="img1" alt=""/>
-                    <img src="../img/home/profesional.jpg" className="img3" alt=""/>
+                <div className="info3" data-aos="fade-up">
+                    <img src="../img/home/cera-profesional.jpg" className="img1 img-fluid " alt=""/>
+                    <img src="../img/home/profesional.jpg" className="img3 img-fluid " alt=""/>
                     <div>
                         <h2>Rendimiento Excepcional, Resultados Profesionales</h2>
                         <p>Eleva tu arte de la depilación con nuestras herramientas diseñadas para profesionales exigentes. Experimenta la potencia, precisión y eficiencia que necesitas para lograr resultados impecables en cada sesión. Confía en la excelencia para destacar en tu práctica profesional. La depilación nunca ha sido tan efectiva y eficiente.</p>
@@ -40,11 +50,11 @@ function HomePage(){
             </section>
 
             
-            <section className="productsHome">
+            <section className="productsHome" data-aos="fade-up">
                 <h2>Nuestros productos</h2>
                 <CardsProduct></CardsProduct>
             </section>
-            <section className="clientes">
+            <section className="clientes" data-aos="fade-up">
                 <h2>¿Por qué los clientes aman a Depily?</h2>
                     <div className="opiniones">
                         <div>
@@ -68,11 +78,11 @@ function HomePage(){
                 </section>
 
 
-                <section className="contact">
+                <section className="contact" data-aos="fade-up">
                     <h2>Contacto</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed illum exercitationem cum nemo minima rerum fuga culpa optio ducimus reiciendis, nihil labore, obcaecati accusamus fugit molestias. Voluptatibus quia id nobis.</p>
+                    <p>¡Conéctate con nosotros! Descubre nuestras avanzadas máquinas de cera y recibe atención personalizada. En Depily, estamos aquí para hacer que tu experiencia de depilación sea excepcional.</p>
 
-                    <form action="#" method="post">
+                    <form action="mailto:abrilhf123@gmail.com" method="post" encType="text/plain">
                         <label htmlFor="text">Consulta</label>
                         <textarea name="text" id="text" cols="30" rows="10"></textarea>
 

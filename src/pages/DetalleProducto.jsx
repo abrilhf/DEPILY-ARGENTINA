@@ -17,6 +17,12 @@ function DetalleProducto() {
 
   const [imagenActual, setImagenActual] = useState(0);
 
+  const [isProfessional, setIsProfessional] = useState(null);
+
+  const handleContactTypeChange = (isProfessional) => {
+    setIsProfessional(isProfessional);
+  };
+
   if (!producto) {
     return <div>Producto no encontrado</div>;
   }
@@ -33,7 +39,7 @@ function DetalleProducto() {
   };
 
   const generarEnlaceWhatsApp = () => {
-    const telefono = '541132486162';
+    const telefono = '541151024487';
     const mensaje = `¡Hola! Me interesa el producto "${producto.nombre}".`;
     const enlaceWhatsApp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
     
@@ -49,7 +55,40 @@ function DetalleProducto() {
       <div className="infoProduct">
         <h1>{producto.nombre}</h1>
         <p>{producto.descripcion}</p>
-        <button onClick={generarEnlaceWhatsApp}>Contactar por WhatsApp</button>
+        <div>
+          <label className="primer-l">Especifica qué tipo de cliente eres para tener más novedades sobre este producto:</label>
+          <div className="tipo-cliente">
+            <button
+              className={isProfessional === true ? "active" : ""}
+              onClick={() => handleContactTypeChange(true)}
+            >
+              Profesional
+            </button>
+            <button
+              className={isProfessional === false ? "active" : ""}
+              onClick={() => handleContactTypeChange(false)}
+            >
+              Cliente Regular
+            </button>
+          </div>
+        </div>
+
+        {isProfessional !== null && (
+          // Mostrar contenido solo cuando se ha seleccionado un tipo de cliente
+          <>
+            {isProfessional ? (
+              // Mostrar opciones de contacto para profesionales (por ejemplo, WhatsApp)
+              <p className="contacto-profesional">Para contactarnos por WhatsApp, haga clic en el siguiente enlace: <a onClick={generarEnlaceWhatsApp}>Chat de WhatsApp</a></p>
+            ) : (
+              // Mostrar formulario de contacto solo para clientes regulares
+              <form action="mailto:abrilhf123@gmail.com" method="post">
+                <label htmlFor="text">Consulta</label>
+                <textarea name="text" id="text" cols="30" rows="10" defaultValue={`¡Hola! Me interesa saber más sobre el producto "${producto.nombre}".`}></textarea>
+                <button type="submit" className="form-correo">Enviar por correo electrónico</button>
+              </form>
+            )}
+          </>
+        )}
         <Link to={"/productos"}><ion-icon name="arrow-back-outline"></ion-icon> Volver</Link>
       </div>
       <div className="imagenes">
@@ -61,7 +100,7 @@ function DetalleProducto() {
               <img
                 src={imagen}
                 alt={`Imagen ${index + 1} de ${producto.nombre}`}
-      
+                className="img-fluid w-100"
               />
             </div>
           ))}

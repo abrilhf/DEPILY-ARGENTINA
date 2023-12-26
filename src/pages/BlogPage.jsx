@@ -2,12 +2,24 @@ import { useEffect } from "react";
 import entradas from "../assets/entradas.json";
 import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function BlogPage() {
   useEffect(() => {
     // Desplazar la página hacia arriba al montar el componente
     window.scrollTo(0, 0);
+
+    AOS.init({
+      duration: 1000,
+      offset: 50, 
+      easing: 'ease-in-out', 
+  });
+
+  return () => {
+      AOS.refresh();
+  };
   }, []);
 
   const entrada = entradas.entradas[entradas.entradas.length - 1]; // Obtén la última entrada
@@ -24,7 +36,7 @@ function BlogPage() {
     </header>
 <main>
     <div className="container mt-4">
-        <div className="ultima-novedad">
+        <div className="ultima-novedad" data-aos="fade-up">
             <h2 className="fs-1 mt-5 mb-5 autor">Última Novedad del Blog</h2>
             {entrada && (
                 <div className="custom-card-minimal mb-4">
@@ -60,11 +72,11 @@ function BlogPage() {
         </div>
 
 
-      <h2 className="fs-1 mt-5 mb-5 autor">Entradas Anteriores del Blog </h2>
+      <h2 className="fs-1 mt-5 mb-5 autor" data-aos="fade-up">Entradas Anteriores del Blog </h2>
         <div className="row">
         {entradas.entradas.map((entrada) => (
             <div key={entrada.id} className="col-md-6 blogs">
-              <div className="custom-card-minimal mb-4">
+              <div className="custom-card-minimal mb-4" data-aos="fade-up">
                 <img
                   className="card-img-top"
                   src={`../img/blog/${entrada.img}`} 

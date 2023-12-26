@@ -1,12 +1,25 @@
 import { Helmet } from "react-helmet";
 import CarouselNosotros from "../components/CarouselNosotros";
 import { useEffect } from "react";
+import ReactMarkdown from "react-markdown";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function NosotrosPage() {
     
     useEffect(() => {
         // Desplazar la página hacia arriba al montar el componente
         window.scrollTo(0, 0);
+
+        AOS.init({
+            duration: 1000,
+            offset: 50, 
+            easing: 'ease-in-out', 
+        });
+
+        return () => {
+            AOS.refresh();
+        };
     }, []);
     
     return(
@@ -17,22 +30,32 @@ function NosotrosPage() {
             </Helmet>
             <div className="seccion-portada-nosotros">
                 <div className="portada-nosotros container">
-                    <h1>depily</h1>
+                    <h1 className="depily-nosotros">depily</h1>
+                    <img src="../img/nosotros/depily_logo.png" className="imgDepily img-fluid pb-2 " alt=""/>
                         <p><span>Somos <em>líderes en Estética Depilatoria en Argentina.</em></span></p> 
                         <p className="fase-portada-nosotros">Comprometidos día a día con la excelencia y la innovación que necesita tu piel.</p>
                 </div>
             </div>
 
-    <div className="descripcion-nosotros">
+    <div className="descripcion-nosotros" data-aos="fade-up">
         <div className="container mt-5">
                 <div className="row">
                     <div className="col-md-6">
                         <div className="texto-nosotros p-4">
-                            <h2><span>Depily</span>, nuestra historia: </h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod asperiores obcaecati similique, ad veniam inventore placeat eum fugiat aut voluptate excepturi illo consectetur blanditiis rem cupiditate sapiente impedit aliquam soluta?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur corrupti nostrum numquam ipsam veritatis quidem, alias quisquam voluptas laborum! Nulla quam nisi corporis nemo voluptates quisquam eius animi commodi.
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora doloribus modi itaque nihil natus quod in soluta quas. Quibusdam fugit architecto, ipsum adipisci provident qui impedit sequi aperiam voluptatem incidunt!
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias repudiandae animi officia reiciendis. Maxime officia ea perferendis laborum. Minus quasi aspernatur magni hic necessitatibus quisquam unde commodi aliquam porro cupiditate?
+                            <h2>Valores fundamentales de <span>Depily</span>: </h2>
+                            <p>
+                            <ReactMarkdown>
+                            Nuestra misión es realzar *tu belleza natural* con productos de calidad excepcional. 
+                            Cada fundidor de cera **Depily** es más que un dispositivo; es una herramienta diseñada 
+                            para proporcionar una *depilación suave y efectiva*, adaptada a tus necesidades únicas. 
+                            En el mundo de la estética, nos destacamos por la calidad y la garantía que ofrecemos. 
+                            Cada producto **Depily** es resultado de un compromiso inquebrantable con la *excelencia*,
+                            respaldado por nuestra *garantía* de satisfacción. Queremos que te sientas segura y hermosa en cada momento.
+                            Sabemos que la depilación no es solo un proceso, sino un ritual que refleja tu dedicación a cuidarte a ti misma.
+                            **Depily** está aquí para ser tu cómplice en este viaje de belleza. 
+                            Confía en nosotros para brindarte productos que se adaptan a tu estilo de vida,
+                            celebrando tu feminidad con cada aplicación.
+                            </ReactMarkdown>
                             </p>
                         </div>
                     </div>
@@ -47,19 +70,7 @@ function NosotrosPage() {
 
     <CarouselNosotros></CarouselNosotros>
 
-    <div className="container valores-empresa">
-        <div className="row">
-        <h3>Valores fundamentales de nuestra empresa:</h3>
-            <div className="col-md-12 d-flex justify-content-center align-items-center mt-5">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolores veniam dolor voluptatibus necessitatibus enim officia possimus dignissimos, iusto totam ab molestiae nemo minima placeat, quisquam officiis quidem commodi cum.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime inventore, aperiam pariatur accusamus ad numquam quas similique, tenetur id vero soluta, quibusdam nemo dolor consequuntur quisquam. Consectetur corporis perferendis inventore!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore qui voluptate dolores, voluptates inventore vel cum mollitia esse voluptatem nam id sequi odio ratione dolore quidem recusandae facilis nobis magni.
-                    </p>
-            </div>
-        </div>
-    </div>
-
-    <div className="descripcion-nosotros">
+    <div className="descripcion-nosotros" data-aos="fade-up">
         <div className="container mt-5">
                 <div className="row">
                     <div className="col-md-6">
@@ -70,11 +81,21 @@ function NosotrosPage() {
                     </div>
                     </div>
                 <div className="col-md-6 texto-nosotros p-4">
-                   <h4>Visión de Futuro: </h4>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis ut doloremque itaque nisi fugit, quae quos est aliquam incidunt quis dolorum modi, quia ipsum natus, fugiat hic enim quam?
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis sint inventore qui illo dolores, mollitia nemo officia et cupiditate, debitis facere molestiae, fugiat ab placeat vitae quidem quia accusantium ad.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, nobis. Ratione, eaque nemo? Odio in quas, magni ad tenetur dolor illo quo esse sapiente animi porro ea quasi quisquam cum?
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis iusto impedit nemo accusantium voluptate aperiam molestiae corporis, dolorum porro, aliquam quos reiciendis est in! Pariatur adipisci dolorem unde nihil iste!</p> 
+                <h4>Visión de Futuro: </h4>
+                    <p>
+                    <ReactMarkdown>
+                    En **Depily**, buscamos un futuro donde la belleza y la confianza sean accesibles para todas las *mujeres en Argentina*.
+                    No solo somos una marca, sino un compañero en el viaje de cada mujer hacia la autenticidad y el cuidado personal.
+                    Queremos llevar nuestros innovadores fundidores de cera a todos los hogares argentinos, 
+                    proporcionando una experiencia cómoda y efectiva de depilación.
+                    Además, nos esforzamos por expandir nuestra presencia en salones de belleza,
+                    colaborando estrechamente con profesionales para ofrecer soluciones de alta calidad.
+                    Visualizamos un país donde **Depily** sea sinónimo de confianza y calidad en la depilación,
+                    *fomentando la conexión y el empoderamiento de cada mujer*. Estamos comprometidos a hacer realidad esta visión,
+                    creando una red de confianza y belleza que abarque toda la nación. 
+                    Creemos que todas las mujeres merecen sentirse hermosas y seguras, sin importar dónde se encuentren en Argentina.
+                    </ReactMarkdown>
+                    </p> 
                     </div>
                 </div>
         </div>

@@ -8,6 +8,7 @@ h1{
     font-family: 'Kodchasan', sans-serif;
 }
 
+
 div div .carousel.slide .carousel-inner .carousel-caption {
     bottom: 18.25rem;
     padding-top: 1.25rem;
@@ -73,6 +74,7 @@ section div.info3{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    margin-top: 14%;
 }
 
 .info{
@@ -159,6 +161,7 @@ section div.info3 div a:hover{
 .clientes .opiniones{
     display: flex;
     padding: 70px;
+    flex-wrap: wrap;
 }
 
 .clientes .opiniones div{
@@ -314,6 +317,11 @@ nav .container div .navbar-nav a{
     color: #fff;
 }
 
+.depily-nosotros{
+    display: none;
+    visibility: hidden;
+}
+
 .portada-nosotros p {
     margin-bottom: 15px;
 }
@@ -378,7 +386,6 @@ nav .container div .navbar-nav a{
     border-radius: 8px;
     border: 2px solid #996998;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: 42px;
     margin-top: 32px;
     display: flex;
     align-items: center;
@@ -417,6 +424,10 @@ nav .container div .navbar-nav a{
 .productos > div div div .card-body{
     margin-top: 32px;
     color: #996998;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 /* .productos > div div div div a {
@@ -451,6 +462,19 @@ nav .container div .navbar-nav a{
     order: -1;
   }
 
+.detalleProduct .tipo-cliente{
+    display: flex;
+}
+
+.detalleProduct .tipo-cliente button:first-child{
+    margin-right: 22px;
+}
+
+.detalleProduct .tipo-cliente button.active{
+    background-color: #341333;
+    color: white;
+}
+
 .detalleProduct{
     display: flex;
     flex-direction: row-reverse;
@@ -468,6 +492,15 @@ nav .container div .navbar-nav a{
 
 .detalleProduct .infoProduct h1{
     color: #996998;
+}
+
+.detalleProduct .infoProduct p.contacto-profesional{
+    margin-top: 60px;
+}
+
+.detalleProduct .infoProduct p.contacto-profesional a{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .detalleProduct .infoProduct p{
@@ -497,8 +530,32 @@ nav .container div .navbar-nav a{
     justify-content: center;
     font-size: 15px;
     font-family: 'Kodchasan', sans-serif;
-    margin-top: 130px;
+    margin-top: 60px;
     border-radius: 8px;
+}
+
+.infoProduct label.primer-l{
+    margin-top: 130px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.infoProduct form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.infoProduct form .form-correo{
+    margin-top: 22px;
+    background-color: #341333;
+    color: white;
+}
+
+.infoProduct form textarea{
+    resize: none;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .infoProduct a{
@@ -613,4 +670,460 @@ p{
 h3,
 h4{
     font-family: 'Kodchasan', sans-serif;
+}
+
+/* TODO MOBILE ABRIL PARTE DE PRODUCTOS-DETALLES Y HOME */
+
+@media screen and (max-width: 1440px){
+    div div .carousel.slide .carousel-inner .carousel-caption {
+        bottom: 112px;
+    }
+
+    .productsHome .card-group .card{
+        margin: 40px;
+    }
+
+    .clientes .opiniones div{
+        width: 100%;
+        margin: 40px;
+    }
+
+    .contact p {
+        padding: 54px;
+    }
+
+    .contact form {
+        width: 76%;
+        margin-left: 12%;
+    }
+
+    .productos > div .col {
+        padding: 120px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    nav .container div .navbar-nav{
+        margin-left: 0;
+    }
+
+    div div .carousel.slide .carousel-inner .carousel-caption {
+        bottom: 0;
+        width: 43%;
+        left: 134px;
+        top: 248px;
+    }
+
+    div div .carousel.slide .carousel-inner .carousel-caption h2 {
+        font-size: 32px;
+    }
+    div div .carousel.slide .carousel-inner .carousel-caption p{
+        font-size: 16px;
+    }
+
+    div div .carousel.slide .carousel-inner .carousel-item {
+        width: 146%;
+    }
+
+    section div.info2,
+    section div.info3{
+        flex-direction: column;
+    }
+    section div.info3{
+        margin-top: 50%;
+    }
+
+    section div .img2,
+    section div .img3 {
+        margin-top: -114px;
+    }
+
+    section div .img3 {
+        margin-right: 152px;
+    }
+
+    .productsHome .card-group {
+        flex-direction: column;
+    }
+
+    .productsHome, .clientes {
+        margin-top: 40%;
+    }
+
+    .clientes .opiniones div{
+        width: 100%;
+    }
+    .clientes .opiniones div {
+        margin-bottom: 120px;
+        margin-top: 10px;
+    }
+
+    .contact form {
+        width: 76%;
+        margin-left: 12%;
+    }
+    .contact{
+        margin-bottom: 120px;
+    }
+
+    .contact p {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 140px;
+    }
+
+    .productos div.row{
+        margin-top: 10%;
+    }
+
+    .productos > div .col {
+        padding: 40px;
+    }
+
+    .detalleProduct {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 4%;
+    }
+
+    .detalleProduct .imagenes {
+        width: 96%;
+    }
+
+    .imagenes .galeria{
+        width: 102%;
+    }
+
+    .imagenes div .slick-prev {
+        left: 8px;
+        z-index: 1;
+    }
+
+    .imagenes div .slick-next{
+        right: -8px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section div.info2,
+    section div.info3{
+        flex-direction: column;
+    }
+
+    div div .carousel.slide .carousel-inner .carousel-caption {
+        bottom: 0;
+        width: 43%;
+        left: 110px;
+        top: 248px;
+    }
+
+    div div .carousel.slide .carousel-inner .carousel-caption h2 {
+        font-size: 32px;
+    }
+    div div .carousel.slide .carousel-inner .carousel-caption p{
+        font-size: 16px;
+    }
+
+    div div .carousel.slide .carousel-inner .carousel-item {
+        width: 184%;
+    }
+
+    nav .container div .navbar-nav {
+        display: flex;
+        margin-left: 0;
+        align-items: flex-start;
+    }
+
+    nav .container div .navbar-nav a {
+        margin-left: 12px;
+        margin-top: 40px;
+        margin-bottom: 8px;
+    }
+
+    .info {
+        margin-top: 40%;
+        margin-left: 114px;
+        margin-right: 24px;
+    }
+
+    section div.info3{
+        margin-top: 50%;
+    }
+
+    section div .img2,
+    section div .img3 {
+        margin-top: -114px;
+    }
+
+    section div .img3 {
+        margin-right: 152px;
+    }
+
+    section div.info2 div, section div.info3 div {
+        padding: 14px;
+        margin-right: 3%;
+        width: 596px;
+        right: 120px;
+        margin-top: 28px;
+    }
+
+    .productsHome .card-group {
+        flex-direction: column;
+    }
+
+    .productsHome, .clientes {
+        margin-top: 40%;
+    }
+    .clientes .opiniones div{
+        width: 100%;
+    }
+    .clientes .opiniones div {
+        margin-bottom: 120px;
+        margin-top: 10px;
+    }
+
+    .contact form {
+        width: 76%;
+        margin-left: 12%;
+    }
+    .contact{
+        margin-bottom: 120px;
+    }
+
+    .contact p {
+        padding: 20px;
+    }
+
+    footer{
+        padding: 100px;
+    }
+
+    .portada-productos h1 {
+        margin-left: 250px;
+    }
+
+    .productos div.row{
+        margin-top: 10%;
+    }
+
+    .productos > div .col {
+        padding: 20px;
+    }
+
+    .detalleProduct {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 4%;
+    }
+
+    .detalleProduct .imagenes {
+        width: 96%;
+    }
+
+    .imagenes{
+        margin-top: 20%;
+    }
+
+    .imagenes .galeria{
+        width: 102%;
+    }
+
+    .imagenes div .slick-prev {
+        left: 8px;
+        z-index: 1;
+    }
+
+    .imagenes div .slick-next{
+        right: -8px;
+    }
+
+    .detalleProduct .infoProduct {
+        margin-right: 10%;
+        margin-bottom: 120px;
+    }
+}
+
+@media screen and (max-width: 425px){ 
+    footer{
+        padding: 0;
+    }
+
+    .carousel-inner {
+        margin-top: 13%;
+    }
+
+    div div .carousel.slide .carousel-inner .carousel-caption h2 {
+        font-size: 20px;
+    }
+    div div .carousel.slide .carousel-inner .carousel-caption p{
+        font-size: 16px;
+    }
+
+    div div .carousel.slide .carousel-inner .carousel-caption {
+        bottom: 0;
+        width: 43%;
+        left: 60px;
+        top: 36px;
+    }
+
+    div div .carousel.slide .carousel-inner .carousel-item {
+        width: 184%;
+    }
+
+    nav .container div .navbar-nav {
+        display: flex;
+        margin-left: 0;
+        align-items: flex-start;
+    }
+
+    nav .container div .navbar-nav a {
+        margin-left: 12px;
+        margin-top: 40px;
+        margin-bottom: 8px;
+    }
+
+    section div.info2,
+    section div.info3{
+        flex-direction: column;
+    }
+
+    .info {
+        margin-top: 40%;
+        margin-left: 114px;
+        margin-right: 24px;
+    }
+
+    section div.info3{
+        margin-top: 50%;
+    }
+
+    section div .img2,
+    section div .img3 {
+        margin-top: -114px;
+    }
+
+    section div .img3 {
+        margin-right: 152px;
+    }
+
+    section div.info2 div, section div.info3 div {
+        padding: 14px;
+        margin-right: 43%;
+        width: 328px;
+        right: 120px;
+        margin-top: 28px;
+    }
+    
+
+    .productsHome, .clientes {
+        margin-top: 40%;
+    }
+
+    .clientes .opiniones{
+        padding: 30px 0 30px 0;
+    }
+
+    .clientes .opiniones div {
+        margin-bottom: 120px;
+        margin-top: 10px;
+    }
+
+    .clientes .opiniones div p{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+    .contact form {
+        width: 76%;
+        margin-left: 12%;
+    }
+    .contact{
+        margin-bottom: 120px;
+    }
+
+    .contact p {
+        padding: 20px;
+    }
+
+    .portada-productos h1 {
+        font-size: 40px;
+        width: 20px;
+        margin-left: 150px;
+    }
+    .seccion-portada-productos {
+        min-height: 44vh;
+    }
+
+    .productos > div .col {
+        padding-top: 200px;
+        padding-left: 24px;
+        padding-right: 0;
+    }
+
+    .detalleProduct {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 4%;
+    }
+
+    .detalleProduct .imagenes {
+        width: 96%;
+    }
+
+    .imagenes{
+        margin-top: 20%;
+    }
+
+    .imagenes .galeria{
+        width: 102%;
+    }
+
+    .imagenes div .slick-prev {
+        left: 8px;
+        z-index: 1;
+    }
+
+    .imagenes div .slick-next{
+        right: -8px;
+    }
+
+    .detalleProduct .infoProduct {
+        margin-right: 10%;
+        margin-bottom: 120px;
+    }
+
+    .productos{
+        margin-bottom: 120px;
+    }
+
+    .seccion-portada-blog{
+        background-image: url(../../public/img/blog/portada-blog-mobile.jpg);
+        min-height: 60vh;
+    }
+
+    .seccion-portada-blog h1{
+        font-size: 40px;
+    }
+
+    .titulo-blog-detalle{
+        padding-top: 20px;
+    }
+
+    .imgDepily{
+        width: 250px;
+        padding-top: 30px;
+    }
+
+    .seccion-portada-nosotros{
+        background-image: url(../../public/img/nosotros/depily-nosotros-mobile.jpg);
+        min-height: 60vh;
+    }
+
+    .ultima-novedad{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }

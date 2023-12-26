@@ -43,7 +43,7 @@ function DetalleBlog() {
             <p className="card-text">
               <ReactMarkdown>{entrada.texto}</ReactMarkdown>
             </p>
-            <p>Producto recomendado: <a href={entrada.link} target="_blank" rel="noopener noreferrer">Enlace a la entrada</a></p>
+            <p>Producto recomendado: <a href={entrada.link} target="_blank" rel="noopener noreferrer">Ver aquí</a></p>
             <p className="card-text autor depily">{entrada.autor}</p>
             <div className="d-flex justify-content-end m-3 "> <Link to={`/blog`} className="card-link btn-blog">Volver</Link></div>
           </div>
