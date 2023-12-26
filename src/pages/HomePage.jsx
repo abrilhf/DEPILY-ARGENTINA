@@ -4,6 +4,7 @@ import CarouselHome from "../components/CarouselHome"
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from "react-router-dom";
 
 function HomePage(){
     useEffect(() => {
@@ -34,7 +35,7 @@ function HomePage(){
                     <div>
                         <h2>Piel Suave, Sin Esfuerzo</h2>
                         <p>Descubre la magia de la depilación en casa con nuestras avanzadas máquinas. Experimenta la suavidad duradera y la comodidad de una piel sin vello desde la comodidad de tu hogar. Transforma tu rutina de belleza con tecnología de precisión y resultados impecables. ¡Tu piel merece lo mejor!</p>
-                        <a href="#">Saber más</a>
+                        <Link to={"/productos"}>Saber más</Link>
                     </div>
                 </div>
 
@@ -44,7 +45,7 @@ function HomePage(){
                     <div>
                         <h2>Rendimiento Excepcional, Resultados Profesionales</h2>
                         <p>Eleva tu arte de la depilación con nuestras herramientas diseñadas para profesionales exigentes. Experimenta la potencia, precisión y eficiencia que necesitas para lograr resultados impecables en cada sesión. Confía en la excelencia para destacar en tu práctica profesional. La depilación nunca ha sido tan efectiva y eficiente.</p>
-                        <a href="#">Saber más</a>
+                        <Link to={"/productos"}>Saber más</Link>
                     </div>
                 </div>
             </section>
