@@ -10,9 +10,9 @@ function CarouselHome() {
           src="../img/portada1-depily.jpg"
           alt="First slide"
         />
-        <Carousel.Caption>
+        <Carousel.Caption className='calentadorSlide'>
           <h2>Calentador de cera profesional</h2>
-          <p>Resistente a <span>altas temperaturas</span> y con una capacidad de <span>800cc</span></p>
+          <p className='calentadorP'>Resistente a <span>altas temperaturas</span> y con una capacidad de <span>800cc</span></p>
           <Link to={"/productos"}>Ver más</Link>
         </Carousel.Caption>
       </Carousel.Item>

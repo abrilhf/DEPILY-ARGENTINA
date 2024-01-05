@@ -260,11 +260,17 @@ footer .map div h2{
 
 footer .map div ul{
     list-style: none;
+    padding-left: 0;
 }
 
 footer .map div ul li{
     margin-bottom: 30px;
 
+}
+
+footer .map div ul li a {
+    color: #000;
+    text-decoration: none;
 }
 
 footer p{
@@ -711,7 +717,7 @@ h4{
         bottom: 0;
         width: 43%;
         left: 134px;
-        top: 248px;
+        top: 140px;
     }
 
     div div .carousel.slide .carousel-inner .carousel-caption h2 {
@@ -721,9 +727,9 @@ h4{
         font-size: 16px;
     }
 
-    div div .carousel.slide .carousel-inner .carousel-item {
+    /* div div .carousel.slide .carousel-inner .carousel-item {
         width: 146%;
-    }
+    } */
 
     section div.info2,
     section div.info3{
@@ -816,7 +822,7 @@ h4{
         bottom: 0;
         width: 43%;
         left: 110px;
-        top: 248px;
+        top: 74px;
     }
 
     div div .carousel.slide .carousel-inner .carousel-caption h2 {
@@ -824,10 +830,6 @@ h4{
     }
     div div .carousel.slide .carousel-inner .carousel-caption p{
         font-size: 16px;
-    }
-
-    div div .carousel.slide .carousel-inner .carousel-item {
-        width: 184%;
     }
 
     nav .container div .navbar-nav {
@@ -946,8 +948,21 @@ h4{
 }
 
 @media screen and (max-width: 425px){ 
+
+    .carousel-inner {
+        height: 24pc; /* Ajusta la altura según tus necesidades */
+    }
+    .carousel-item img {
+        height: 24pc;
+        object-fit: cover;
+    }
+
     footer{
-        padding: 0;
+        padding: 30px;
+    }
+
+    .productsHome .card-group .card{
+        margin: 0;
     }
 
     .carousel-inner {
@@ -957,19 +972,38 @@ h4{
     div div .carousel.slide .carousel-inner .carousel-caption h2 {
         font-size: 20px;
     }
+
+    div div .carousel.slide .carousel-inner .carousel-caption h2:last-child{
+        width: 50%;
+    }
     div div .carousel.slide .carousel-inner .carousel-caption p{
         font-size: 16px;
     }
 
-    div div .carousel.slide .carousel-inner .carousel-caption {
-        bottom: 0;
-        width: 43%;
-        left: 60px;
-        top: 36px;
+    div div .carousel.slide .carousel-inner .carousel-caption.car-2{
+        top: 86px;
+        width: 68%;
+        height: 236px;
     }
 
-    div div .carousel.slide .carousel-inner .carousel-item {
-        width: 184%;
+    div div .carousel.slide .carousel-inner .carousel-caption.calentadorSlide{
+        top: 64px;
+        height: 255px;
+    }
+
+    div div .carousel.slide .carousel-inner .carousel-caption p.calentadorP{
+        width: 90%;
+    }
+
+    div div .carousel.slide .carousel-inner .carousel-caption {
+        bottom: 0;
+        width: 50%;
+        left: 60px;
+        top: 78px;
+        background: #dfbddf82;
+        height: 230px;
+        border-radius: 13px;
+        padding: 12px;
     }
 
     nav .container div .navbar-nav {

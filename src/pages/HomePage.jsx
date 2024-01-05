@@ -55,7 +55,7 @@ function HomePage(){
                 <h2>Nuestros productos</h2>
                 <CardsProduct></CardsProduct>
             </section>
-            <section className="clientes" data-aos="fade-up">
+            <section className="clientes" data-aos="fade-up" id="opiniones">
                 <h2>¿Por qué los clientes aman a Depily?</h2>
                     <div className="opiniones">
                         <div>
@@ -79,7 +79,7 @@ function HomePage(){
                 </section>
 
 
-                <section className="contact" data-aos="fade-up">
+                <section className="contact" data-aos="fade-up" id="contacto">
                     <h2>Contacto</h2>
                     <p>¡Conéctate con nosotros! Descubre nuestras avanzadas máquinas de cera y recibe atención personalizada. En Depily, estamos aquí para hacer que tu experiencia de depilación sea excepcional.</p>
 
