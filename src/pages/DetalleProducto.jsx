@@ -48,6 +48,7 @@ function DetalleProducto() {
 
   
   return (
+    <div className="detalleProducto">
     <section className="detalleProduct container">
       <Helmet>
         <title>Detalle de {producto.nombre}</title>
@@ -111,7 +112,12 @@ function DetalleProducto() {
               key={index}
               src={imagen}
               alt={`Imagen ${index + 1} de ${producto.nombre}`}
-              style={{ maxWidth: "120px", maxHeight: "120px", margin: "5px", cursor: "pointer" }}
+              style={{ 
+                maxWidth: "120px", 
+                maxHeight: "120px", 
+                margin: "5px", 
+                cursor: "pointer",
+              }}// Opacidad reducida para las imágenes no seleccionadas}}
               onClick={() => setImagenActual(index)}
             />
           ))}
@@ -119,6 +125,7 @@ function DetalleProducto() {
       </div>
 
     </section>
+    </div>
   );
 }
 

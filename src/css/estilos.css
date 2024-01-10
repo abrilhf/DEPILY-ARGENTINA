@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
-h1{
-    font-family: 'Kodchasan', sans-serif;
+.home, .blog, .nosotros, .blog-detalle, .productos, .detalleProduct, .card, footer, .detalleProducto{
+    background-image: url(../../img/texturas/granulado.svg);
 }
 
+.navBar{
+    background-color: #f4f4f4;
+}
+
+h1{
+    font-family: 'Gayathri', sans-serif;
+}
 
 div div .carousel.slide .carousel-inner .carousel-caption {
     bottom: 18.25rem;
@@ -19,8 +26,7 @@ div div .carousel.slide .carousel-inner .carousel-caption {
 }
 
 div div .carousel.slide .carousel-inner .carousel-caption h2{
-    font-family: 'Kodchasan', sans-serif;
-    font-weight: bold;
+    font-family: 'Gayathri', sans-serif;   
     font-size: 58px;
 }
 
@@ -46,8 +52,12 @@ div div .carousel.slide .carousel-inner .carousel-caption a{
     width: 112px;
     justify-content: center;
     font-size: 16px;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;    
     border-radius: 8px;
+}
+
+nav .container .navbar-toggler{
+    border: none;
 }
 
 div div .carousel.slide .carousel-inner .carousel-caption a:hover{
@@ -97,7 +107,7 @@ section div.info3 div p{
 
 section div.info2 div h2,
 section div.info3 div h2{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;
 }
 
 section div.info2 div a,
@@ -111,8 +121,8 @@ section div.info3 div a{
     width: 112px;
     justify-content: center;
     font-size: 16px;
-    font-family: 'Kodchasan', sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Gayathri', sans-serif;   
+     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 8px;
 }
 
@@ -131,8 +141,7 @@ section div.info3 div a:hover{
 .clientes h2,
 .contact h2{
     text-align: center;
-    font-family: 'Kodchasan', sans-serif;
-}
+    font-family: 'Gayathri', sans-serif;}
 
 .productsHome .card-group .card{
     border: none;
@@ -190,7 +199,7 @@ section div.info3 div a:hover{
 }
 
 .contact form label{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;    
     font-size: 20px;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -215,7 +224,7 @@ section div.info3 div a:hover{
     width: 112px;
     justify-content: center;
     font-size: 16px;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;    
     margin-top: 20px;
     border-radius: 8px;
 }
@@ -252,7 +261,7 @@ footer .map div:last-child{
 }
 
 footer .map div h2{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;    
     margin-bottom: 30px;
     margin-top: 30px;
     font-size: 22px;
@@ -299,8 +308,10 @@ nav .container div .navbar-nav a{
     text-decoration: none;
     color: #000;
     margin-left: 80px;
-    font-family: 'Kodchasan', sans-serif;
-    font-size: 18px;
+    font-family: 'Gayathri', sans-serif;    
+    font-weight: 500;
+    font-variant: 1;
+    font-size: 18px;
 }
 
 /**Sección Nosotros**/
@@ -336,6 +347,7 @@ nav .container div .navbar-nav a{
     font-style: italic;
     letter-spacing: 0.1em;
     margin-top: 15px;
+    font-family: 'Gayathri', sans-serif;
 }
 
 .portada-nosotros .fase-portada-nosotros {
@@ -344,7 +356,7 @@ nav .container div .navbar-nav a{
 }
 
 .descripcion-nosotros{
-    margin: 100px 0 100px 0;
+    margin-top: 100px;
 
 }
 
@@ -353,7 +365,7 @@ nav .container div .navbar-nav a{
 }
 
 .texto-nosotros > h2 > span {
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;
 }
 
 .nosotros .descripcion-nosotros div div div .texto-nosotros{
@@ -386,7 +398,7 @@ nav .container div .navbar-nav a{
 .btn-productos {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
     color: #996998;
     text-decoration: none;
     border-radius: 8px;
@@ -442,8 +454,7 @@ nav .container div .navbar-nav a{
     margin-left: 15%;
     color: #4f324f;
     margin-top: 30px;
-    font-family: 'Kodchasan', sans-serif;
-}
+    font-family: 'Gayathri', sans-serif;}
 
 .productos > div div div div a ion-icon{
     margin-left: 13px;
@@ -535,7 +546,7 @@ nav .container div .navbar-nav a{
     width: 264px;
     justify-content: center;
     font-size: 15px;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;    
     margin-top: 60px;
     border-radius: 8px;
 }
@@ -569,7 +580,7 @@ nav .container div .navbar-nav a{
     margin-top: 30px;
     align-items: center;
     color: #996998;
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;
 }
 
 .infoProduct a ion-icon{
@@ -595,18 +606,18 @@ nav .container div .navbar-nav a{
     color: #996998;
 }
 .autor{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;    
     color: #b11cab;
 }
 
 .titulo-blog-detalle{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;    
     color: #996998;
     font-weight: bold;
 }
 
 .titulo-blog{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;    
     color: #996998;
     font-weight: bold;
     font-size: 30px;
@@ -630,13 +641,13 @@ nav .container div .navbar-nav a{
 }
 
 .subtitulo-blog-detalle{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;       
     color: #996998;
     font-size: 25px;
 }
 
 .subtitulo-blog{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;    
     color: #996998;
     font-size: 25px;
 }
@@ -675,7 +686,7 @@ p{
 
 h3,
 h4{
-    font-family: 'Kodchasan', sans-serif;
+    font-family: 'Gayathri', sans-serif;
 }
 
 /* TODO MOBILE ABRIL PARTE DE PRODUCTOS-DETALLES Y HOME */
@@ -769,7 +780,7 @@ h4{
         margin-left: 12%;
     }
     .contact{
-        margin-bottom: 120px;
+        padding-bottom: 120px;
     }
 
     .contact p {
@@ -891,7 +902,7 @@ h4{
         margin-left: 12%;
     }
     .contact{
-        margin-bottom: 120px;
+        padding-bottom: 120px;
     }
 
     .contact p {
@@ -970,7 +981,7 @@ h4{
     }
 
     div div .carousel.slide .carousel-inner .carousel-caption h2 {
-        font-size: 20px;
+        font-size: 32px;
     }
 
     div div .carousel.slide .carousel-inner .carousel-caption h2:last-child{
@@ -987,8 +998,9 @@ h4{
     }
 
     div div .carousel.slide .carousel-inner .carousel-caption.calentadorSlide{
-        top: 64px;
-        height: 255px;
+        top: 35px;
+        height: 315px;
+        
     }
 
     div div .carousel.slide .carousel-inner .carousel-caption p.calentadorP{
@@ -1000,7 +1012,7 @@ h4{
         width: 50%;
         left: 60px;
         top: 78px;
-        background: #dfbddf82;
+        background: #e5dae582;
         height: 230px;
         border-radius: 13px;
         padding: 12px;
@@ -1075,7 +1087,7 @@ h4{
         margin-left: 12%;
     }
     .contact{
-        margin-bottom: 120px;
+        padding-bottom: 120px;
     }
 
     .contact p {

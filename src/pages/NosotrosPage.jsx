@@ -38,7 +38,7 @@ function NosotrosPage() {
             </div>
 
     <div className="descripcion-nosotros" data-aos="fade-up">
-        <div className="container mt-5">
+        <div className="container mt-5 mb-5">
                 <div className="row">
                     <div className="col-md-6">
                         <div className="texto-nosotros p-4">
@@ -70,7 +70,7 @@ function NosotrosPage() {
 
     <CarouselNosotros></CarouselNosotros>
 
-    <div className="descripcion-nosotros" data-aos="fade-up">
+    <div className="descripcion-nosotros pb-5" data-aos="fade-up">
         <div className="container mt-5">
                 <div className="row">
                     <div className="col-md-6">

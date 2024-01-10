@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function NavBarDepily() {
   return (
-    <Navbar expand="lg" fixed="top" className="bg-body-tertiary">
+    <Navbar expand="lg" fixed="top" className="navBar">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

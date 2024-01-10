@@ -22,7 +22,7 @@ function HomePage(){
     }, []);
     
     return (
-        <div>
+        <div className="home">
             <Helmet>
             <title>Depily</title>
             </Helmet>

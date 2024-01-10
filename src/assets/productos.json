@@ -5,9 +5,9 @@
         "nombre": "Calentador Fundidor De Cera 1kg Depily",
         "descripcion": "Descubre la eficiencia del Fundidor De Cera Depily, con capacidad para 1 kilo. Ideal para uso profesional y doméstico, este dispositivo ofrece control de temperatura de alta precisión, cuenta con filtro de metal, tapa plástica con agarre y termostato interno. Simplifica tu rutina de depilación con esta opción compacta y versátil.",
         "images": [
-                    "../img/productos/depily-500.jpg",
-                    "../img/productos/depily-500(2).jpg",
-                    "../img/productos/depily-500(3).jpg"
+                    "../img/productos/depily-500.png",
+                    "../img/productos/depily-500(2).png",
+                    "../img/productos/depily-500(3).png"
                   ]
       },
       {
@@ -15,8 +15,8 @@
         "nombre": "Fundidor De Cera Depily 1000",
         "descripcion": "El Fundidor De Cera 1000, con capacidad para 1 kilo, ofrece control de temperatura preciso para una fusión óptima. Diseñado para uso profesional y doméstico, cuenta con un filtro de metal, tapa plástica con agarre y termostato interno. Simplifica tu experiencia de depilación con este dispositivo compacto y eficiente.",
         "images": [
-          "../img/productos/depily-1000.jpg",
-          "../img/productos/depily-1000(2).jpg"
+          "../img/productos/depily-1000.png",
+          "../img/productos/depily-1000(2).png"
         ]
       },
       {
@@ -24,8 +24,8 @@
         "nombre": "Fundidor Cera Depilatoria Depily 3 Kg Calentador Profesional 3000",
         "descripcion": "El Fundidor Cera Depilatoria Depily 3 Kg es tu aliado para una depilación eficiente. Con capacidad de 3 kg, carga 1 kg arriba (colar) y 2 kg abajo (depilar). Control de temperatura, corte automático, y colador de aluminio integrado para una aplicación suave y libre de vellos. Temperatura ajustable de 30º a 80º para adaptarse a diferentes tipos de cera. Simplifica tu proceso de depilación con este calentador profesional de fácil uso.",
         "images": [
-          "../img/productos/depily-3000.jpg",
-          "../img/productos/depily-3000(2).jpg"
+          "../img/productos/depily-3000.png",
+          "../img/productos/depily-3000(2).png"
         ]
       },
       {
@@ -33,8 +33,8 @@
         "nombre": "Fundidor De Cera Profesional Depily 4000",
         "descripcion": "El Fundidor De Cera Profesional 4000 es tu aliado perfecto para una fusión de cera eficiente. Con una capacidad dual de 2 kilos arriba y 2 kilos abajo, y un colador metálico de alta calidad, garantiza resultados profesionales. Su diseño duradero, fácil de usar y control de temperatura preciso lo convierten en la elección ideal para profesionales de la estética. Eleva tu experiencia en depilación con este dispositivo versátil y eficaz.",
         "images": [
-          "../img/productos/depily-4000.jpg",
-          "../img/productos/depily-4000(2).jpg"
+          "../img/productos/depily-4000.png",
+          "../img/productos/depily-4000(2).png"
         ]
       },
       {
@@ -42,8 +42,8 @@
         "nombre": "Fundidor De Cera Depily 1000 (Parafinero)",
         "descripcion": "El Fundidor De Cera 1000, con capacidad para 1 kilo, ofrece control de temperatura preciso para una fusión óptima. Diseñado para uso profesional y doméstico, cuenta con un filtro de metal, tapa plástica con agarre y termostato interno. Simplifica tu experiencia de depilación con este dispositivo compacto y eficiente. Además, este fundidor es ideal para el tratamiento de parafina, proporcionando una solución efectiva y cómoda para la hidratación de la piel. Descubre la conveniencia y los beneficios profesionales de este innovador dispositivo para el cuidado de la piel.",
         "images": [
-          "../img/productos/depily-1000-parafinero.jpg",
-          "../img/productos/depily-1000-parafinero(2).jpg"
+          "../img/productos/depily-1000-parafinero.png",
+          "../img/productos/depily-1000-parafinero(2).png"
         ]
       }
     ],

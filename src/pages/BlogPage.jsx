@@ -24,7 +24,7 @@ function BlogPage() {
 
   const entrada = entradas.entradas[entradas.entradas.length - 1]; // Obtén la última entrada
   return (
-    <div>
+    <div className="blog">
         <header>
             <div className="seccion-portada-blog">
                 <div className="portada-blog container">
