@@ -5,7 +5,7 @@
 }
 
 .home, .blog, .nosotros, .blog-detalle, .productos, .detalleProduct, .card, footer, .detalleProducto{
-    background-image: url(../../img/texturas/granulado.svg);
+    background-image: url(../../img/texturas/papel.svg);
 }
 
 .navBar{
