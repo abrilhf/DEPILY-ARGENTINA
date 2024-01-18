@@ -7,6 +7,24 @@ function CarouselHome() {
       <Carousel.Item>
       <picture>
           {/* Imagen para pantallas grandes */}
+          <source media="(min-width: 426px)" srcSet="../img/portada-principal-mobile.jpg" />
+
+          {/* Imagen para pantallas pequeñas */}
+          <img
+            className="d-block w-100 img-fluid"
+            src="../img/portada-principal.jpg"
+            alt="First slide"
+          />
+        </picture>
+        <Carousel.Caption className='calentadorSlide'>
+          <div>
+            PRODUCTOS
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <picture>
+          {/* Imagen para pantallas grandes */}
           <source media="(min-width: 426px)" srcSet="../img/portada1-depily.jpg" />
 
           {/* Imagen para pantallas pequeñas */}

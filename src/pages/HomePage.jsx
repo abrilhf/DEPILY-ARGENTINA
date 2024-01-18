@@ -81,7 +81,7 @@ function HomePage(){
 
                 <section className="contact" data-aos="fade-up" id="contacto">
                     <h2>Contacto</h2>
-                    <p>¡Conéctate con nosotros! Descubre nuestras avanzadas máquinas de cera y recibe atención personalizada. En Depily, estamos aquí para hacer que tu experiencia de depilación sea excepcional.</p>
+                    <p>¡Conectate con nosotros! Descubre nuestros derretidores de cera depilatoria y recibe atención personalizada. En Depily, estamos aquí para hacer que tu experiencia de depilación sea excepcional.</p>
 
                     <form action="mailto:abrilhf123@gmail.com" method="post" encType="text/plain">
                         <label htmlFor="text">Consulta</label>

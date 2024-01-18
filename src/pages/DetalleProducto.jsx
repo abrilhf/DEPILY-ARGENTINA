@@ -79,7 +79,7 @@ function DetalleProducto() {
           <>
             {isProfessional ? (
               // Mostrar opciones de contacto para profesionales (por ejemplo, WhatsApp)
-              <p className="contacto-profesional">Para contactarnos por WhatsApp, haga clic en el siguiente enlace: <a onClick={generarEnlaceWhatsApp}>Chat de WhatsApp</a></p>
+              <p className="contacto-profesional">Si estás interesado en comercializar la linea podes comunicarte por WhatsApp <a onClick={generarEnlaceWhatsApp}>Chat de WhatsApp</a></p>
             ) : (
               // Mostrar formulario de contacto solo para clientes regulares
               <form action="mailto:abrilhf123@gmail.com" method="post">

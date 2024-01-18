@@ -29,8 +29,8 @@ function BlogPage() {
             <div className="seccion-portada-blog">
                 <div className="portada-blog container">
                     <h1>Nuestro Blog</h1>
-                        <p><em>En <span className="depily">depily</span>, queremos brindarte toda la información posible.</em></p> 
-                        <p className="fase-portada-blog">Para que puedas estar informada día a día y vivas la mejor experiencia.</p>
+                        <p><em>En <span className="depily">DEPILY</span>, queremos brindarte toda la información posible.</em><p className="fase-portada-blog">Para que puedas estar informada día a día y vivas la mejor experiencia.</p></p> 
+                        
                 </div>
             </div>
     </header>
