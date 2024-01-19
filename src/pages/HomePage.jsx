@@ -1,10 +1,10 @@
 import { Helmet } from "react-helmet"
 import CardsProduct from "../components/CardsProduct"
-import CarouselHome from "../components/CarouselHome"
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
+import productos from "../assets/productos.json";
 
 function HomePage(){
     useEffect(() => {
@@ -26,7 +26,16 @@ function HomePage(){
             <Helmet>
             <title>Depily</title>
             </Helmet>
-            <CarouselHome></CarouselHome>
+
+            <section className="portada-principal">
+                <div>
+                {productos.productos.slice(0, -1).map((producto, index) => (
+                    <Link to={`/productos/${producto.id}`} key={index}>
+                        <img src={producto.images[0]} alt={producto.nombre} />
+                    </Link>
+                ))}
+                </div>
+            </section>
 
             <section className="info">
                 <div className="info2" data-aos="fade-up">

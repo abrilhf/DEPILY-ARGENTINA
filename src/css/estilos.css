@@ -8,6 +8,33 @@
     background-image: url(../../img/texturas/papel.svg);
 }
 
+.portada-principal{
+    background-image: url(../../img/portada-principal.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.portada-principal div img{
+    height: 268px;
+    padding-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portada-principal div img:hover{
+    transform: translateY(-10px);
+}
+
+.portada-principal div{
+    display: flex;
+}
+
 .navBar{
     background-color: #f4f4f4;
 }
@@ -692,6 +719,10 @@ h4{
 /* TODO MOBILE ABRIL PARTE DE PRODUCTOS-DETALLES Y HOME */
 
 @media screen and (max-width: 1440px){
+    .portada-principal{
+        background-position-x: center;
+    }
+    
     div div .carousel.slide .carousel-inner .carousel-caption {
         bottom: 112px;
     }
@@ -720,6 +751,10 @@ h4{
 }
 
 @media screen and (max-width: 1024px){
+    .portada-principal{
+        background-position-x: center;
+    }
+
     nav .container div .navbar-nav{
         margin-left: 0;
     }
@@ -824,6 +859,15 @@ h4{
 }
 
 @media screen and (max-width: 768px){
+
+    .portada-principal{
+        background-position-x: center;
+    }
+
+    .portada-principal div img {
+        height: 212px;
+    }
+
     section div.info2,
     section div.info3{
         flex-direction: column;
@@ -856,7 +900,7 @@ h4{
     }
 
     .info {
-        margin-top: 40%;
+        margin-top: 20%;
         margin-left: 114px;
         margin-right: 24px;
     }
@@ -960,6 +1004,18 @@ h4{
 
 @media screen and (max-width: 425px){ 
 
+    .portada-principal{
+        background-image: url(../../img/portada-principal-mobile.jpg);
+        flex-direction: column;
+        background-size: auto;
+        justify-content: flex-end;
+    }
+
+    .portada-principal div img {
+        height: 138px;
+        padding-bottom: 34px;
+    }
+
     .carousel-inner {
         height: 24pc; /* Ajusta la altura según tus necesidades */
     }
@@ -1036,13 +1092,13 @@ h4{
     }
 
     .info {
-        margin-top: 40%;
+        margin-top: 20%;
         margin-left: 114px;
         margin-right: 24px;
     }
 
     section div.info3{
-        margin-top: 50%;
+        margin-top: 40px;
     }
 
     section div .img2,
@@ -1064,7 +1120,7 @@ h4{
     
 
     .productsHome, .clientes {
-        margin-top: 40%;
+        margin-top: 20%;
     }
 
     .clientes .opiniones{
@@ -1072,7 +1128,7 @@ h4{
     }
 
     .clientes .opiniones div {
-        margin-bottom: 120px;
+        margin-bottom: 60px;
         margin-top: 10px;
     }
 
@@ -1087,7 +1143,7 @@ h4{
         margin-left: 12%;
     }
     .contact{
-        padding-bottom: 120px;
+        padding-bottom: 60px;
     }
 
     .contact p {
