@@ -31,7 +31,7 @@ function HomePage(){
                 <div>
                 {productos.productos.slice(0, -1).map((producto, index) => (
                     <Link to={`/productos/${producto.id}`} key={index}>
-                        <img src={producto.images[0]} alt={producto.nombre} />
+                        <img src={producto.images[0]} alt={producto.nombre}/>
                     </Link>
                 ))}
                 </div>

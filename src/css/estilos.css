@@ -1014,6 +1014,7 @@ h4{
     .portada-principal div img {
         height: 138px;
         padding-bottom: 34px;
+        margin-bottom: 50px;
     }
 
     .carousel-inner {
@@ -1229,3 +1230,11 @@ h4{
         margin-bottom: 50px;
     }
 }
+
+@media screen and (max-width: 375px){
+    .portada-principal div img {
+        height: 128px;
+        margin-bottom: 0;
+    }
+}
+
