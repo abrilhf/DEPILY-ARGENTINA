@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.home, .blog, .nosotros, .blog-detalle, .productos, .detalleProduct, .card, footer, .detalleProducto{
+.home, .blog, .nosotros, .blog-detalle, .productos, .card, footer, .detalleProducto{
     background-image: url(../../img/texturas/papel.svg);
 }
 
