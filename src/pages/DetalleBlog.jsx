@@ -2,6 +2,7 @@ import { useParams, Link} from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import entradas from "../assets/entradas.json";
 import  { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 
 function DetalleBlog() {
@@ -22,6 +23,9 @@ function DetalleBlog() {
 
   return (
     <section className="container mt-4 blog-detalle">
+          <Helmet>
+          <title>{entrada.titulo} - Depily</title>
+          </Helmet>
     <div className="row">
       <div className="col-md-6">
         <img

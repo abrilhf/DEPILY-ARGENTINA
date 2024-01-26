@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from "react-helmet";
 
 
 function BlogPage() {
@@ -25,6 +26,9 @@ function BlogPage() {
   const entrada = entradas.entradas[entradas.entradas.length - 1]; // Obtén la última entrada
   return (
     <div className="blog">
+            <Helmet>
+            <title>Blog - Depily</title>
+            </Helmet>
         <header>
             <div className="seccion-portada-blog">
                 <div className="portada-blog container">
